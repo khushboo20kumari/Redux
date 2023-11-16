@@ -1,17 +1,30 @@
-import { Provider } from "react-redux"
+import React from 'react';
+import { Provider } from 'react-redux';
 import './App.css';
-import store from "./reduxContainer/Store";
-import BookContainer from "./reduxContainer/BookContainer";
+import store from './reduxContainer/Store';
+import BookContainer from './reduxContainer/BookContainer';
 
-function App() {   
+function App() {
   return (
     <Provider store={store}>
       <div className="App">
-        <BookContainer/>
-         
+        <BookContainer />
       </div>
     </Provider>
   );
 }
 
 export default App;
+
+
+// import Counter from "./CounterContainer/Counter";
+// function App(){
+
+//     return(
+//         <div className="App">
+//             <Counter/>
+
+//         </div>
+//     )
+// }
+// export default App;
