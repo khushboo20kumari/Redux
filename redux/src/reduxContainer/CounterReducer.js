@@ -2,7 +2,7 @@
 import { increment } from "./CounterType";
 
 const initialState = {
-  numberofbook: 20,
+  count: 0,
 };
 
 const CounterReducer = (state = initialState, action) => {
@@ -10,7 +10,7 @@ const CounterReducer = (state = initialState, action) => {
     case increment:
       return {
         ...state,
-        numberofbook: state.numberofbook - 1,
+        count: state.count + 1,
       };
     default:
       return state;

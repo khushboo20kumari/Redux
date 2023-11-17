@@ -3,12 +3,13 @@ import CounterAction from "./CounterAction";
 import { useDispatch } from "react-redux";
 
 function Counter() {
-  const numofbook = useSelector(state => state.numberofbook)
+  const counter= useSelector(state => state.count)
   const distpatch = useDispatch()
 
   return (
     <>
-      <p>container{numofbook}</p>
+      <p>count: {counter}</p>
+
       <button onClick={() => (distpatch(CounterAction()))}>Click me</button>
     </>
 
