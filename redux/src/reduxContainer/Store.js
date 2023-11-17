@@ -1,5 +1,5 @@
 import { createStore } from 'redux';
-import BookReducer from "./BookReducer";
-const store=createStore(BookReducer)
+import CounterReducer from "./CounterReducer";
+const store=createStore(CounterReducer)
 
 export default store; 

@@ -1,13 +1,13 @@
-// BookReducer.js
-import { buyBook } from "./BookType";
+
+import { increment } from "./CounterType";
 
 const initialState = {
   numberofbook: 20,
 };
 
-const BookReducer = (state = initialState, action) => {
+const CounterReducer = (state = initialState, action) => {
   switch (action.type) {
-    case buyBook:
+    case increment:
       return {
         ...state,
         numberofbook: state.numberofbook - 1,
@@ -17,4 +17,4 @@ const BookReducer = (state = initialState, action) => {
   }
 };
 
-export default BookReducer;
+export default CounterReducer;

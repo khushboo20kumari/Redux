@@ -2,13 +2,13 @@ import React from 'react';
 import { Provider } from 'react-redux';
 import './App.css';
 import store from './reduxContainer/Store';
-import BookContainer from './reduxContainer/BookContainer';
+import Counter from './reduxContainer/Counter';
 
 function App() {
   return (
     <Provider store={store}>
       <div className="App">
-        <BookContainer />
+        <Counter />
       </div>
     </Provider>
   );
